@@ -1,0 +1,18 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Replace 'emotion' with your actual column name
+emotion_column = 'emotion'
+
+# Check if the column exists
+if emotion_column in df.columns:
+    plt.figure(figsize=(10, 6))
+    sns.countplot(data=df, x=emotion_column, order=df[emotion_column].value_counts().index, palette='Set2')
+    plt.title('Emotion Distribution')
+    plt.xlabel('Emotion')
+    plt.ylabel('Count')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
+else:
+    print(f"Column '{emotion_column}' not found in the dataset. Available columns: {df.columns.tolist()}")
