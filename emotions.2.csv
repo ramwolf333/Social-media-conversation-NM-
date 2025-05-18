@@ -1,0 +1,6 @@
+﻿Post_id,Text,emotion,sentiment
+1,"""I am feeling amazing today""",Joy,0.92
+2," ""This is so fraustrating and unfair""",Anger,0.77
+3,"""I just wanna cry""",Sadness,1.24
+4,"""WOW! That was unexpected""",Surprise,1.01
+5," ""Another day, another dollar",Neutral,0.63
